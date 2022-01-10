@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.left-header {
+  display: flex;
+}
+.header-item {
+  padding: 12px 24px;
+}
+.header-item:hover {
+  background: #ccc;
+  cursor: pointer;
+  color: black;
+}
+.right-header {
+  padding: 12px 24px;
+  position: relative;
+}
+.right-header:hover {
+  background: red;
+  cursor: pointer;
+}
+.header-item {
+  position: relative;
+}
+.menu {
+  display: none;
+  position: absolute;
+  color: black;
+  list-style: none;
+  top: 100%;
+  left: 0;
+  background: white;
+  padding: 0;
+}
+.menu-item {
+  padding: 8px 16px;
+}
+.menu-item:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+.header-item:hover .menu {
+  display: block;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.img-text {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 32px 0;
+}
+#carouselExampleInterval {
+  margin-top: 48px;
+}
+.band {
+  max-width: 800px;
+  margin: auto;
+  padding: 64px 16px;
+}
+.band-text {
+  text-align: center;
+}
+.band-text p {
+  text-align: justify;
+}
+.band-text i {
+  margin: 15px 0;
+  display: block;
+  opacity: 0.6;
+}
+.band-block {
+  display: flex;
+  padding: 32px 0;
+}
+.block-item img {
+  width: 60%;
+  border-radius: 4px;
+}
+.block-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.block-item p {
+  margin: 15px 0;
+}
+.tour {
+  background: black;
+  color: white;
+  padding: 64px 16px;
+}
+.tour-text {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  padding: 0 6px;
+}
+.tour-text i {
+  display: block;
+  margin: 15px 0;
+  opacity: 0.6;
+}
+.date {
+  background: white;
+  color: #757575;
+  text-align: left;
+}
+.month {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+.sold {
+  background: #f44336;
+  color: white;
+  margin-left: 16px;
+  padding: 0 8px;
+}
+.last {
+  display: flex;
+  justify-content: space-between;
+}
+.last p {
+  background: black;
+  color: white;
+  margin: 0;
+  margin-right: 16px;
+  padding: 0 8px;
+  border-radius: 50%;
+}
+.tour-tickets {
+  display: flex;
+  max-width: 800px;
+  margin: auto;
+  padding: 32px 0px;
+}
+.card-body {
+  color: black;
+}
+.card-date {
+  opacity: 0.6;
+}
+.ticket {
+  padding: 0 8px;
+  margin-bottom: 16px;
+}
+.card {
+  border-radius: 0;
+  border: none;
+}
+.card img {
+  width: 100%;
+}
+.card img:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.card-img {
+  background: black;
+}
+.card-button {
+  display: block;
+  background: black;
+  color: white;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  width: fit-content;
+  text-decoration: none;
+}
+.card-button:hover {
+  background: #ccc;
+  color: black;
+  cursor: pointer;
+}
+.modal-header {
+  flex-direction: column-reverse;
+  background: #009688;
+  color: white;
+}
+.modal-title {
+  text-align: center;
+}
+.modal-body input {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.modal-body p {
+  margin: 15px 0;
+}
+.modal-body button {
+  width: 100%;
+  padding: 16px;
+  margin: 16px 0;
+  background: #009688;
+  color: white;
+  border: none;
+}
+.modal-body button:hover,
+.modal-close:hover {
+  color: #009688;
+  background-color: #ccc;
+}
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-close {
+  background: red;
+  color: white;
+  padding: 8px 16px;
+  margin: 16px 0;
+  border: none;
+}
+
+.mobile {
+  display: none;
+}
+
+.dropdown-menu {
+  inset: unset !important;
+  transform: none !important;
+  top: 100% !important;
+  right: 0 !important;
+  width: 100vw;
+  background: black;
+}
+.dropdown-item {
+  color: white;
+  padding: 0;
+}
+.dropdown-menu li {
+  padding: 12px 24px;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .desktop,
+  .img-text {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .tour-tickets,
+  .band-block {
+    flex-direction: column;
+  }
+}
+
+.row {
+  background: #009688;
+  height: 100px;
+  --bs-gutter-x: 0;
+}
+
+.con {
+  height: 100px;
+  background: #f44336;
+  border: 1px solid black;
+}
